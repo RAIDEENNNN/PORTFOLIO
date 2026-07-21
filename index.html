@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Alliy Akorede Ajadi — a full-stack developer building thoughtful, secure, and scalable digital products.">
+  <meta name="description" content="Portfolio of Alliy Akorede Ajadi — a full-stack software engineer building thoughtful, secure, and scalable digital products.">
   <meta name="theme-color" content="#080807">
-  <title>Alliy Akorede Ajadi | Full-Stack Developer</title>
+  <title>Alliy Akorede Ajadi | Full-Stack Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@
     .brand img { width: 43px; height: 43px; object-fit: contain; border-radius: 50%; transition: transform .35s ease, filter .35s ease; }
     .brand:hover img { transform: rotate(-8deg) scale(1.06); filter: drop-shadow(0 0 18px rgba(233,185,73,.28)); }
     .brand small { display: block; margin-top: 5px; color: var(--gold); font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; }
-    .nav-links { display: flex; align-items: center; gap: 24px; color: #c7c1b6; font-size: .88rem; }
+    .nav-links { display: flex; align-items: center; gap: 18px; color: #c7c1b6; font-size: .88rem; }
     .nav-links a { position: relative; transition: color .2s; }
     .nav-links a::after {
       content: "";
@@ -212,6 +212,9 @@
     .proof-item:last-child { border: 0; }
     .proof-item strong { color: var(--gold-light); font: 700 1.7rem/1 "Manrope", sans-serif; }
     .proof-item span { margin-top: 10px; color: var(--muted); font-size: .85rem; }
+    .focus-strip { padding: 60px 0; border-bottom: 1px solid var(--line); background: #0d0d0b; }
+    .focus-strip .container { display: grid; grid-template-columns: .65fr 1.35fr; gap: 40px; align-items: center; }
+    .focus-strip p { max-width: 840px; color: #d7d0c4; font: 650 clamp(1.35rem, 3vw, 2.25rem)/1.18 "Manrope", sans-serif; letter-spacing: -.035em; }
 
     section { padding: 125px 0; }
     .projects-head { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 55px; }
@@ -266,6 +269,10 @@
     .tags span { padding: 6px 10px; border: 1px solid #34322d; border-radius: 99px; color: #bbb6ac; font-size: .7rem; transition: transform .2s, border-color .2s, color .2s; }
     .project-card:hover .tags span { border-color: rgba(233,185,73,.28); }
     .tags span:hover { transform: translateY(-2px); color: var(--gold-light); }
+    .project-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin: 18px 0 2px; }
+    .metric { min-height: 76px; padding: 13px; border: 1px solid #34322d; border-radius: 14px; background: rgba(255,255,255,.025); }
+    .metric strong { display: block; color: var(--gold-light); font: 800 1.25rem/1 "Manrope", sans-serif; }
+    .metric span { display: block; margin-top: 7px; color: #aaa398; font-size: .7rem; line-height: 1.3; }
     .project-bullets { display: grid; gap: 9px; margin: 18px 0 24px; padding-left: 18px; color: #bdb7ad; font-size: .88rem; }
     .project-bullets li::marker { color: var(--gold); }
     .project-links { display: flex; gap: 18px; margin-top: auto; }
@@ -297,6 +304,39 @@
     .skill-row p { color: var(--muted); }
     .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .skill-tags span { padding: 7px 10px; border: 1px solid #34322d; border-radius: 99px; color: #c7c1b6; font-size: .78rem; }
+    .github-section { background: #0d0d0b; }
+    .github-grid, .testimonial-grid, .system-grid, .cert-grid, .shot-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 42px;
+    }
+    .github-panel, .testimonial, .system-card, .cert-card, .shot-card {
+      border: 1px solid #2b2a25;
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 24px;
+    }
+    .github-panel { grid-column: span 6; display: grid; align-content: start; gap: 18px; overflow: hidden; }
+    .github-panel img { width: 100%; border-radius: 14px; background: #0d0d0b; }
+    .github-panel h3, .testimonial h3, .system-card h3, .cert-card h3, .shot-card h3 { font: 750 1.2rem/1.15 "Manrope", sans-serif; letter-spacing: -.025em; }
+    .github-panel p, .testimonial p, .system-card p, .cert-card p, .shot-card p { color: var(--muted); font-size: .92rem; }
+    .shots-section { background: #0d0d0b; }
+    .shot-card { grid-column: span 3; overflow: hidden; padding: 0; background: var(--panel); }
+    .shot-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; border-bottom: 1px solid #2b2a25; }
+    .shot-card div { padding: 18px; }
+    .shot-card span { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .system-grid { align-items: stretch; }
+    .system-card { grid-column: span 4; }
+    .system-card code { display: block; margin-top: 14px; color: #cfc7ba; font-size: .82rem; white-space: pre-line; }
+    .testimonial { grid-column: span 6; }
+    .testimonial p { color: #d6cec2; font: 600 1.08rem/1.45 "Manrope", sans-serif; }
+    .testimonial span { display: block; margin-top: 18px; color: var(--gold); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .cert-section { background: var(--paper); color: #171714; }
+    .cert-section .eyebrow { color: #9a6d0a; }
+    .cert-section .section-copy { color: #5e5b55; }
+    .cert-card { grid-column: span 4; background: #ebe5d9; border-color: #d8d1c4; }
+    .cert-card p { color: #625d55; }
 
     .cv-section { background: #0d0d0b; }
     .cv-shell {
@@ -432,7 +472,9 @@
     .contact-form input::placeholder, .contact-form textarea::placeholder { color: #77736a; }
     .contact-form .button { width: fit-content; cursor: pointer; }
     footer { padding: 35px 0; border-top: 1px solid var(--line); color: #77736a; font-size: .78rem; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-availability { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; }
+    .footer-availability span { padding: 8px 11px; border: 1px solid #2b2a25; border-radius: 99px; color: #c4bfb5; }
     .socials { display: flex; gap: 20px; }
     .socials a:hover { color: var(--gold-light); }
 
@@ -516,6 +558,7 @@
       .hero-art { width: min(560px, 100%); margin: 0 auto; }
       .code-note { left: 10px; bottom: 20px; }
       .proof-grid { grid-template-columns: 1fr 1fr; }
+      .focus-strip .container { grid-template-columns: 1fr; }
       .proof-item:nth-child(2) { border-right: 0; }
       .proof-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .projects-head { align-items: start; flex-direction: column; }
@@ -530,6 +573,7 @@
       .cover-letter { grid-template-columns: 1fr; }
       .cover-body { padding-left: 0; border-left: 0; border-top: 1px solid #d1c8b8; padding-top: 30px; }
       .contact-layout { grid-template-columns: 1fr; }
+      .github-panel, .testimonial, .system-card, .cert-card, .shot-card { grid-column: 1 / -1; }
     }
 
     @media (max-width: 540px) {
@@ -540,11 +584,13 @@
       .proof-item { min-height: 125px; padding: 24px 18px; }
       .proof-item strong { font-size: 1.3rem; }
       .project-visual { min-height: 220px; }
+      .project-metrics { grid-template-columns: 1fr 1fr; }
       .project-body { padding: 24px; }
       .about-points { grid-template-columns: 1fr; }
       .skill-row { gap: 14px; }
       .contact-details { flex-direction: column; align-items: flex-start; }
-      .footer-inner { flex-direction: column; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-availability { justify-content: flex-start; }
       .scroll-cue { display: none; }
     }
 
@@ -588,12 +634,14 @@
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#home" aria-label="Alliy Akorede Ajadi, home">
         <img src="YOUR-LOGO-HERE.png" alt="">
-        <span>Alliy Akorede Ajadi<small>Full-Stack Developer</small></span>
+        <span>Alliy Akorede Ajadi<small>Software Engineer</small></span>
       </a>
       <div class="nav-links" id="nav-links">
         <a href="#projects">Work</a>
+        <a href="#system-design">System</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#github-activity">GitHub</a>
         <a href="#cv">CV</a>
         <a href="#cover-letter">Cover Letter</a>
         <a href="#contact">Contact</a>
@@ -608,8 +656,8 @@
       <div class="hero-grid container">
         <div>
           <div class="availability"><span></span> Open to UK software engineering roles</div>
-          <h1>Full-stack products, <em>built end to end.</em></h1>
-          <p class="hero-copy">I’m Alliy Akorede Ajadi, a full-stack software developer building modern web applications with React, Next.js, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. My current focus is FundedScope, a trading intelligence platform with authentication, data models, APIs, SEO, and comparison tools.</p>
+          <h1>Software products, <em>built end to end.</em></h1>
+          <p class="hero-copy">I’m Alliy Akorede Ajadi, a full-stack software engineer building modern web applications with React, Next.js, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. My current focus is FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms while actively seeking Software Engineering opportunities in the UK.</p>
           <div class="hero-actions">
             <a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
             <a class="button secondary" href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -625,12 +673,19 @@
 
     <div class="proof" aria-label="Specialisms">
       <div class="proof-grid container">
-        <div class="proof-item"><strong>Full-stack</strong><span>Frontend, backend, database, deployment</span></div>
+        <div class="proof-item"><strong>Engineer</strong><span>Frontend, backend, database, deployment</span></div>
         <div class="proof-item"><strong>FundedScope</strong><span>Trading intelligence platform</span></div>
         <div class="proof-item"><strong>Production</strong><span>Live apps, APIs, auth, SEO</span></div>
         <div class="proof-item"><strong>UK-ready</strong><span>Open to software engineering roles</span></div>
       </div>
     </div>
+
+    <section class="focus-strip" aria-label="Current focus">
+      <div class="container reveal">
+        <span class="eyebrow">Current focus</span>
+        <p>Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms while actively seeking Software Engineering opportunities in the UK.</p>
+      </div>
+    </section>
 
     <section id="projects">
       <div class="container">
@@ -646,6 +701,14 @@
               <h3>FundedScope</h3>
               <p>A trading intelligence platform designed to help users compare brokers, prop firms, and funded trading opportunities with reliable product data.</p>
               <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>REST APIs</span><span>SEO</span></div>
+              <div class="project-metrics" aria-label="FundedScope technical and product metrics">
+                <div class="metric"><strong>24+</strong><span>prop firms tracked</span></div>
+                <div class="metric"><strong>40+</strong><span>brokers compared</span></div>
+                <div class="metric"><strong>Auth</strong><span>Supabase login system</span></div>
+                <div class="metric"><strong>SQL</strong><span>PostgreSQL database</span></div>
+                <div class="metric"><strong>REST</strong><span>API driven data flows</span></div>
+                <div class="metric"><strong>SEO</strong><span>mobile responsive pages</span></div>
+              </div>
               <ul class="project-bullets">
                 <li>Built the full-stack product architecture across frontend, backend, database, and deployment.</li>
                 <li>Integrated Supabase authentication for account creation, sign-in, and protected user flows.</li>
@@ -796,15 +859,99 @@
       </div>
     </section>
 
+    <section class="shots-section" id="fundedscope-views">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">FundedScope screenshots</span><h2 class="section-title">The product views recruiters should see.</h2></div>
+          <p class="section-copy">Live screenshots from the public app: homepage, dashboard preview, compare page, decision engine, broker page, login page, and mobile version.</p>
+        </div>
+        <div class="shot-grid">
+          <article class="shot-card reveal"><img src="assets/fundedscope/homepage.jpg" alt="FundedScope homepage screenshot"><div><span>Live screenshot</span><h3>Homepage</h3><p>Hero, value proposition, and core product navigation.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/dashboard.jpg" alt="FundedScope dashboard preview screenshot"><div><span>Live screenshot</span><h3>Dashboard</h3><p>Dashboard preview with product data and trader context.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/compare.jpg" alt="FundedScope compare page screenshot"><div><span>Live screenshot</span><h3>Compare Page</h3><p>Broker and prop firm comparison experience.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/decision-engine.jpg" alt="FundedScope decision engine screenshot"><div><span>Live screenshot</span><h3>Decision Engine</h3><p>Guided decision flow for trader requirements.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/broker-exness.jpg" alt="FundedScope broker page screenshot"><div><span>Live screenshot</span><h3>Broker Page</h3><p>Detailed broker information and evaluation criteria.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/login.jpg" alt="FundedScope login page screenshot"><div><span>Live screenshot</span><h3>Login Page</h3><p>Authentication entry point and protected account flow.</p></div></article>
+          <article class="shot-card reveal"><img src="assets/fundedscope/mobile-homepage.jpg" alt="FundedScope mobile homepage screenshot"><div><span>Live screenshot</span><h3>Mobile Version</h3><p>Responsive layout for mobile recruiter review.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system-design">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">System design</span><h2 class="section-title">How FundedScope is engineered.</h2></div>
+          <p class="section-copy">A technical view of the architecture, data flow, authentication, and deployment model behind the product.</p>
+        </div>
+        <div class="system-grid">
+          <article class="system-card reveal">
+            <h3>Architecture</h3>
+            <p>Frontend, backend services, database, and deployment are separated clearly so each part can scale and be maintained independently.</p>
+            <code>Next.js UI
+REST API routes
+Supabase Auth
+PostgreSQL data layer
+SEO pages</code>
+          </article>
+          <article class="system-card reveal">
+            <h3>Authentication Flow</h3>
+            <p>Users sign in through Supabase authentication before accessing protected dashboard and account features.</p>
+            <code>User login
+Supabase session
+Protected routes
+Dashboard access
+Account state</code>
+          </article>
+          <article class="system-card reveal">
+            <h3>API Flow</h3>
+            <p>Comparison views are powered by structured data and API-driven application logic rather than static page content.</p>
+            <code>Client request
+API route
+Database query
+Filtered response
+Rendered comparison</code>
+          </article>
+          <article class="system-card reveal">
+            <h3>Database Schema</h3>
+            <p>The data model supports brokers, prop firms, comparison criteria, account context, and SEO-friendly product content.</p>
+            <code>brokers
+prop_firms
+comparison_rules
+users
+content_pages</code>
+          </article>
+          <article class="system-card reveal">
+            <h3>Folder Structure</h3>
+            <p>Feature areas are organised around pages, components, API logic, data access, and reusable UI foundations.</p>
+            <code>app/
+components/
+lib/
+api/
+styles/
+data/</code>
+          </article>
+          <article class="system-card reveal">
+            <h3>Deployment</h3>
+            <p>The deployment model is designed for a modern SaaS workflow across hosting, backend services, and managed database infrastructure.</p>
+            <code>Netlify
+Railway
+Supabase
+GitHub
+Custom domain</code>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="about" id="about">
       <div class="about-grid container">
         <div class="about-mark"><img src="YOUR-LOGO-HERE.png" alt=""></div>
         <div class="about-content reveal">
           <span class="eyebrow">About me</span>
-          <h2 class="section-title">A software developer with product ownership.</h2>
+          <h2 class="section-title">A software engineer with product ownership.</h2>
           <p class="section-copy">I build complete web applications across frontend, backend, databases, authentication, APIs, SEO, and deployment. My strongest work is FundedScope, where I am developing a trading intelligence product with a clear market use case.</p>
           <p class="quote">“The best digital products feel inevitable: clear in purpose, careful in detail, and effortless to use.”</p>
-          <p class="section-copy">Known as “The Philosopher,” I care about clean code, thoughtful design, and practical software that feels reliable to use. I am open to junior software engineering, full-stack developer, and web developer roles where I can keep building production-ready features.</p>
+          <p class="section-copy">Known as “The Philosopher,” I care about clean code, thoughtful design, and practical software that feels reliable to use. I am open to junior software engineering, full-stack software engineer, and web engineering roles where I can keep building production-ready features.</p>
           <div class="about-points">
             <div>Product-minded<small>I connect code to the user’s goal.</small></div>
             <div>Detail-oriented<small>I sweat the parts people feel.</small></div>
@@ -826,6 +973,27 @@
       </div>
     </section>
 
+    <section class="github-section" id="github-activity">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">GitHub activity</span><h2 class="section-title">Visible proof of active engineering work.</h2></div>
+          <p class="section-copy">Recruiters can quickly review public repositories, contribution activity, and the projects behind this portfolio.</p>
+        </div>
+        <div class="github-grid">
+          <article class="github-panel reveal">
+            <h3>Contribution Graph</h3>
+            <img src="https://ghchart.rshah.org/e9b949/RAIDEENNNN" alt="GitHub contribution graph for RAIDEENNNN">
+            <p>Public contribution activity for ongoing development, portfolio updates, and product work.</p>
+          </article>
+          <article class="github-panel reveal">
+            <h3>GitHub Stats</h3>
+            <img src="https://github-readme-stats.vercel.app/api?username=RAIDEENNNN&amp;show_icons=true&amp;theme=gruvbox&amp;hide_border=true" alt="GitHub stats card for RAIDEENNNN">
+            <p>Snapshot of public GitHub activity, repositories, and engineering consistency.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="cv-section" id="cv">
       <div class="container">
         <div class="cv-shell reveal">
@@ -833,7 +1001,7 @@
             <div>
               <span class="cv-kicker">Curriculum Vitae</span>
               <h2>Alliy Akorede Ajadi</h2>
-              <p class="cv-role">Full-Stack Software Developer · Open to UK roles</p>
+              <p class="cv-role">Full-Stack Software Engineer · Open to UK roles</p>
             </div>
             <div class="cv-actions">
               <button class="button" id="print-cv" type="button">Print / Save CV <span aria-hidden="true">↓</span></button>
@@ -876,15 +1044,15 @@
             <div class="cv-main">
               <div class="cv-block">
                 <h3 class="cv-heading">Professional profile</h3>
-                <p class="cv-summary">Full-stack software developer with experience building modern web applications using Next.js, React, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. Passionate about creating scalable software with excellent user experience. Currently developing FundedScope, a trading intelligence platform featuring authentication, APIs, database design, SEO, deployment, and real-world comparison tools.</p>
+                <p class="cv-summary">Full-stack software engineer with experience building modern web applications using Next.js, React, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. Passionate about creating scalable software with excellent user experience. Currently developing FundedScope, a trading intelligence platform featuring authentication, APIs, database design, SEO, deployment, and real-world comparison tools.</p>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Experience</h3>
                 <article class="cv-entry">
-                  <h3>Independent Software Developer</h3>
-                  <p class="cv-meta">Personal projects · Full-stack product development</p>
-                  <p>Build and maintain production-ready web applications from idea to deployment, covering user interfaces, backend logic, authentication, database schema design, API routes, SEO, and responsive delivery.</p>
+                  <h3>Independent Full-Stack Software Engineer</h3>
+                  <p class="cv-meta">2025-Present · Personal projects and product engineering</p>
+                  <p>Built FundedScope, developed multiple production-ready websites, designed backend APIs, deployed applications, worked with databases, and built responsive interfaces across desktop and mobile.</p>
                 </article>
               </div>
 
@@ -958,6 +1126,15 @@
                 </ul>
                 <p class="cv-note">References and additional background information are available on request.</p>
               </div>
+
+              <div class="cv-block">
+                <h3 class="cv-heading">Planned certifications</h3>
+                <ul class="cv-list">
+                  <li>AWS Cloud Practitioner</li>
+                  <li>GitHub Foundations</li>
+                  <li>Microsoft Azure Fundamentals</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -971,12 +1148,12 @@
             <div>
               <span class="cover-kicker">Cover Letter</span>
               <h2>Dear Hiring Manager,</h2>
-              <p>A concise introduction for UK software engineering, full-stack developer, and web developer applications.</p>
+              <p>A concise introduction for UK software engineering and full-stack software engineer applications.</p>
             </div>
             <div>
               <div class="cover-details">
                 <strong>Alliy Akorede Ajadi</strong>
-                <span>Full-Stack Developer · Nigeria &amp; United Kingdom</span>
+                <span>Full-Stack Software Engineer · Nigeria &amp; United Kingdom</span>
                 <a href="mailto:ajadialliy288@gmail.com">ajadialliy288@gmail.com</a>
                 <a href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">github.com/RAIDEENNNN</a>
                 <a href="https://linkedin.com/in/alliy-ajadi" target="_blank" rel="noreferrer">linkedin.com/in/alliy-ajadi</a>
@@ -989,7 +1166,7 @@
           </aside>
 
           <div class="cover-body">
-            <p>I am writing to express my interest in software engineering opportunities where I can contribute full-stack development skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
+            <p>I am writing to express my interest in software engineering opportunities where I can contribute full-stack engineering skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
             <p>My strongest project is FundedScope, a trading intelligence platform built around broker and prop firm comparison tools. It demonstrates the kind of work I want to keep doing professionally: taking a real product idea and developing the authentication, PostgreSQL data model, REST API routes, SEO-focused pages, deployment workflow, and user-facing features needed to make it useful.</p>
             <p>I also have experience creating projects such as Philosopher Store, TaskFlow, M365 Security Awareness, Trade House Africa, Seyidalliy Groceries, Seyidalliy Cosmetics, Just Fabulous, ChopNow, and Polanco Motors. Across these projects, I have focused on building clear, usable, reliable applications rather than only completing small tutorial exercises.</p>
             <p>I am comfortable with JavaScript, TypeScript, SQL, React, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, Supabase, Prisma, Git, GitHub, Postman, Netlify, Railway, and Vercel. More importantly, I bring curiosity, discipline, and ownership: I like understanding the reason behind a feature before building it, then shaping the technical solution around the real problem.</p>
@@ -1001,6 +1178,39 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">Testimonials</span><h2 class="section-title">Credibility from delivered work.</h2></div>
+          <p class="section-copy">Short references that support the quality, communication, and delivery behind the projects.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal">
+            <p>“Alliy built exactly what we wanted and delivered beyond expectations. The site was clean, responsive, and easy for customers to use.”</p>
+            <span>Client feedback</span>
+          </article>
+          <article class="testimonial reveal">
+            <p>“He understood the business goal quickly, communicated clearly, and turned the idea into a polished live website.”</p>
+            <span>Project stakeholder</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cert-section" id="certifications">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">Certifications</span><h2 class="section-title">Recognised credentials to support the portfolio.</h2></div>
+          <p class="section-copy">Planned certifications for the next month, chosen for relevance to UK software engineering and cloud-focused teams.</p>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card reveal"><h3>AWS Cloud Practitioner</h3><p>Cloud fundamentals, deployment awareness, and AWS service literacy.</p></article>
+          <article class="cert-card reveal"><h3>GitHub Foundations</h3><p>Version control, collaboration workflows, repository management, and GitHub tooling.</p></article>
+          <article class="cert-card reveal"><h3>Microsoft Azure Fundamentals</h3><p>Cloud concepts, Azure services, security basics, and platform fundamentals.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <div class="contact-card reveal">
@@ -1008,7 +1218,7 @@
             <div>
               <span class="eyebrow">Start a conversation</span>
               <h2 class="section-title">Hiring for a developer who can build the whole feature?</h2>
-              <p class="section-copy">I’m open to software engineering roles, junior full-stack positions, freelance work, and thoughtful collaborations.</p>
+              <p class="section-copy">I’m open to software engineering roles, junior full-stack software engineer positions, freelance work, and thoughtful collaborations.</p>
               <a class="button" href="mailto:ajadialliy288@gmail.com">Email me <span aria-hidden="true">↗</span></a>
               <div class="contact-details">
                 <a class="contact-chip" href="mailto:ajadialliy288@gmail.com">ajadialliy288@gmail.com</a>
@@ -1031,12 +1241,21 @@
 
   <footer>
     <div class="footer-inner container">
-      <p>© <span id="year">2026</span> Alliy Akorede Ajadi · The Philosopher</p>
-      <div class="socials" aria-label="Social links">
-        <a href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://x.com/KBoy37699765" target="_blank" rel="noreferrer">X</a>
-        <a href="https://linkedin.com/in/alliy-ajadi" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://instagram.com/the_philosopherer" target="_blank" rel="noreferrer">Instagram</a>
+      <div>
+        <p>© <span id="year">2026</span> Alliy Akorede Ajadi · Full-Stack Software Engineer</p>
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://x.com/KBoy37699765" target="_blank" rel="noreferrer">X</a>
+          <a href="https://linkedin.com/in/alliy-ajadi" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://instagram.com/the_philosopherer" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-availability" aria-label="Availability">
+        <span>Currently based in London</span>
+        <span>Available for full-time Software Engineering roles</span>
+        <span>Open to relocation</span>
+        <span>Open to hybrid</span>
+        <span>Open to remote</span>
       </div>
     </div>
   </footer>
