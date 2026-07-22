@@ -321,6 +321,35 @@
     .github-panel img { width: 100%; border-radius: 14px; background: #0d0d0b; }
     .github-panel h3, .testimonial h3, .system-card h3, .cert-card h3, .shot-card h3 { font: 750 1.2rem/1.15 "Manrope", sans-serif; letter-spacing: -.025em; }
     .github-panel p, .testimonial p, .system-card p, .cert-card p, .shot-card p { color: var(--muted); font-size: .92rem; }
+    .github-stat-card {
+      display: grid;
+      gap: 18px;
+      min-height: 270px;
+      padding: 24px;
+      border: 1px solid #34322d;
+      border-radius: 16px;
+      background:
+        radial-gradient(circle at 82% 16%, rgba(233,185,73,.12), transparent 36%),
+        linear-gradient(135deg, #12120f, #090908);
+    }
+    .github-stat-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .github-stat-top strong { color: var(--gold-light); font: 800 1.4rem/1 "Manrope", sans-serif; }
+    .github-stat-top span { color: #77736a; font-size: .78rem; }
+    .github-stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .github-stat {
+      min-height: 88px;
+      padding: 15px;
+      border: 1px solid #2b2a25;
+      border-radius: 14px;
+      background: rgba(255,255,255,.025);
+    }
+    .github-stat strong { display: block; color: var(--paper); font: 800 1.55rem/1 "Manrope", sans-serif; }
+    .github-stat span { display: block; margin-top: 8px; color: var(--muted); font-size: .78rem; }
+    .language-bars { display: grid; gap: 12px; }
+    .language-bar { display: grid; gap: 6px; }
+    .language-bar div { display: flex; justify-content: space-between; gap: 12px; color: #d7d0c4; font-size: .82rem; }
+    .language-bar i { display: block; height: 9px; overflow: hidden; border-radius: 99px; background: #2b2a25; }
+    .language-bar b { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
     .shots-section { background: #0d0d0b; }
     .shot-card { grid-column: span 3; overflow: hidden; padding: 0; background: var(--panel); }
     .shot-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; border-bottom: 1px solid #2b2a25; }
@@ -716,7 +745,7 @@
                 <li>Built REST API routes and SEO-focused pages to support discovery and maintainable data access.</li>
                 <li>Created broker and prop firm comparison tools with a clear business purpose.</li>
               </ul>
-              <div class="project-links"><a href="https://myfundedscope.com/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/RAIDEENNNN/FundedScope" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
+              <div class="project-links"><a href="https://myfundedscope.com/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/RAIDEENNNN/PROP-FIRM-INTELLIGENCE" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -748,7 +777,7 @@
                 <li>Added search, analytics, and collaboration features for clearer project tracking.</li>
                 <li>Designed a responsive productivity interface for repeated daily use.</li>
               </ul>
-              <div class="project-links"><a href="https://github.com/RAIDEENNNN/taskflow" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
+              <div class="project-links"><a href="https://github.com/RAIDEENNNN/TaskFlow" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -797,7 +826,7 @@
               <h3>Philosopher Academy</h3>
               <p>An academy website built to organise learning content, communicate the programme clearly, and give students an engaging digital starting point.</p>
               <div class="tags"><span>Education</span><span>Frontend</span><span>Responsive UI</span></div>
-              <div class="project-links"><a href="https://philosopheracademy.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/ACADEMY" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
+              <div class="project-links"><a href="https://philosopheracademy.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/PHILOSOPHER-ACADEMY" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -808,7 +837,7 @@
               <h3>Seyidalliy Groceries</h3>
               <p>A grocery storefront for imported Nigerian goods, built to present products clearly and support straightforward customer ordering.</p>
               <div class="tags"><span>Commerce</span><span>Product catalogue</span><span>Responsive UI</span></div>
-              <div class="project-links"><a href="https://seyidalliygroceries.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><span>GitHub: add repo URL</span></div>
+              <div class="project-links"><a href="https://seyidalliygroceries.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/SEYID-ALLIY-GROCERIES" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -819,7 +848,7 @@
               <h3>Seyidalliy Cosmetics</h3>
               <p>A cosmetics business website focused on brand presentation, product messaging, and clear routes for wholesale enquiries.</p>
               <div class="tags"><span>Business website</span><span>Wholesale</span><span>Responsive design</span></div>
-              <div class="project-links"><a href="https://seyidalliycosmetics.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><span>GitHub: add repo URL</span></div>
+              <div class="project-links"><a href="https://seyidalliycosmetics.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/SEYID-ALLIY-COSMETICS" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -830,7 +859,7 @@
               <h3>Just Fabulous</h3>
               <p>A fashion-focused storefront and brand experience with editorial styling, product-led visuals, and a mobile-friendly layout.</p>
               <div class="tags"><span>Fashion</span><span>Brand website</span><span>Mobile-first UI</span></div>
-              <div class="project-links"><a href="https://justfabulous.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><span>GitHub: add repo URL</span></div>
+              <div class="project-links"><a href="https://justfabulous.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/JustFabulous" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -841,7 +870,7 @@
               <h3>ChopNow</h3>
               <p>A dependency-free restaurant storefront with menu filtering, persistent cart management, delivery pricing, and WhatsApp checkout.</p>
               <div class="tags"><span>JavaScript</span><span>Shopping cart</span><span>WhatsApp checkout</span></div>
-              <div class="project-links"><a href="https://chopnowx.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><span>GitHub: add repo URL</span></div>
+              <div class="project-links"><a href="https://chopnowx.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/ChopNow" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
 
@@ -852,7 +881,7 @@
               <h3>Polanco Motors</h3>
               <p>A premium vehicle dealership experience with searchable inventory, detailed vehicle views, finance tools, promotions, and customer enquiries.</p>
               <div class="tags"><span>Vehicle inventory</span><span>Finance tools</span><span>Node.js</span></div>
-              <div class="project-links"><a href="https://polancox.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><span>GitHub: add repo URL</span></div>
+              <div class="project-links"><a href="https://polancox.netlify.app/" target="_blank" rel="noreferrer">Open project ↗</a><a href="https://github.com/RAIDEENNNN/POLANCO" target="_blank" rel="noreferrer">GitHub repository ↗</a></div>
             </div>
           </article>
         </div>
@@ -981,14 +1010,51 @@ Custom domain</code>
         </div>
         <div class="github-grid">
           <article class="github-panel reveal">
+            <h3>GitHub Profile</h3>
+            <img src="assets/github/profile-overview.jpg" alt="GitHub profile overview screenshot for RAIDEENNNN">
+            <p>Public profile view showing pinned work and contribution activity.</p>
+          </article>
+          <article class="github-panel reveal">
+            <h3>Repository List</h3>
+            <img src="assets/github/repositories.jpg" alt="GitHub repositories screenshot for RAIDEENNNN">
+            <p>Public repositories including FundedScope, portfolio, commerce builds, and frontend applications.</p>
+          </article>
+          <article class="github-panel reveal">
             <h3>Contribution Graph</h3>
             <img src="https://ghchart.rshah.org/e9b949/RAIDEENNNN" alt="GitHub contribution graph for RAIDEENNNN">
             <p>Public contribution activity for ongoing development, portfolio updates, and product work.</p>
           </article>
           <article class="github-panel reveal">
             <h3>GitHub Stats</h3>
-            <img src="https://github-readme-stats.vercel.app/api?username=RAIDEENNNN&amp;show_icons=true&amp;theme=gruvbox&amp;hide_border=true" alt="GitHub stats card for RAIDEENNNN">
-            <p>Snapshot of public GitHub activity, repositories, and engineering consistency.</p>
+            <div class="github-stat-card" role="img" aria-label="GitHub stats for RAIDEENNNN">
+              <div class="github-stat-top">
+                <strong>RAIDEENNNN</strong>
+                <span>Public GitHub profile</span>
+              </div>
+              <div class="github-stat-grid">
+                <div class="github-stat"><strong>14</strong><span>public repositories</span></div>
+                <div class="github-stat"><strong>14</strong><span>2026 contributions</span></div>
+                <div class="github-stat"><strong>TypeScript</strong><span>FundedScope repo</span></div>
+                <div class="github-stat"><strong>HTML/CSS</strong><span>portfolio and client sites</span></div>
+              </div>
+            </div>
+            <p>Snapshot of public GitHub activity, repositories, and engineering consistency, rendered locally so it always appears.</p>
+          </article>
+          <article class="github-panel reveal">
+            <h3>Top Languages</h3>
+            <div class="github-stat-card" role="img" aria-label="Top languages across RAIDEENNNN repositories">
+              <div class="github-stat-top">
+                <strong>Language Mix</strong>
+                <span>Public repositories</span>
+              </div>
+              <div class="language-bars">
+                <div class="language-bar"><div><span>TypeScript</span><span>FundedScope</span></div><i><b style="width: 78%;"></b></i></div>
+                <div class="language-bar"><div><span>HTML</span><span>Portfolio and stores</span></div><i><b style="width: 70%;"></b></i></div>
+                <div class="language-bar"><div><span>JavaScript</span><span>Interactive UI</span></div><i><b style="width: 56%;"></b></i></div>
+                <div class="language-bar"><div><span>CSS</span><span>Responsive styling</span></div><i><b style="width: 48%;"></b></i></div>
+              </div>
+            </div>
+            <p>Language mix across public repositories, useful for a quick recruiter scan of technical focus.</p>
           </article>
         </div>
       </div>
