@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Alliy Akorede Ajadi — a full-stack software engineer building thoughtful, secure, and scalable digital products.">
   <meta name="theme-color" content="#080807">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alliy Akorede Ajadi | Full-Stack Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer building FundedScope, a SaaS trading intelligence platform with authentication, PostgreSQL, REST APIs, SEO, and responsive UI.">
+  <meta property="og:image" content="YOUR-LOGO-HERE.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alliy Akorede Ajadi | Full-Stack Software Engineer">
+  <meta name="twitter:description" content="Full-stack software engineer building production-ready web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, and Supabase.">
+  <meta name="twitter:image" content="YOUR-LOGO-HERE.png">
   <title>Alliy Akorede Ajadi | Full-Stack Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,6 +172,8 @@
     }
     h1 em { display: block; color: var(--gold); font-style: normal; }
     .hero-copy { max-width: 590px; margin: 30px 0 36px; color: #b8b3a9; font-size: clamp(1rem, 1.5vw, 1.18rem); animation: fadeSlideUp .85s .38s cubic-bezier(.2,.8,.2,1) both; }
+    .stack-glance { display: flex; flex-wrap: wrap; gap: 8px; max-width: 690px; margin: -12px 0 30px; animation: fadeSlideUp .85s .44s cubic-bezier(.2,.8,.2,1) both; }
+    .stack-glance span { padding: 8px 11px; border: 1px solid #34322d; border-radius: 99px; background: rgba(255,255,255,.025); color: #d5cec2; font-size: .78rem; font-weight: 700; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; animation: fadeSlideUp .85s .5s cubic-bezier(.2,.8,.2,1) both; }
     .hero-art { position: relative; animation: artEnter 1s .35s cubic-bezier(.2,.8,.2,1) both; transform-style: preserve-3d; transition: transform .18s ease-out; }
     .portrait-frame {
@@ -282,6 +292,109 @@
     .project-links a:hover { color: var(--gold-light); }
     .project-links a:hover { transform: translateX(3px); }
     .project-links a:hover span { transform: translate(2px, -2px); }
+    .case-section { background: #0d0d0b; }
+    .case-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 45px; }
+    .case-card {
+      grid-column: span 4;
+      min-height: 240px;
+      padding: 26px;
+      border: 1px solid #2b2a25;
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+    .case-card h3 { color: var(--gold-light); font: 800 1.2rem/1.1 "Manrope", sans-serif; letter-spacing: -.025em; }
+    .case-card p { margin-top: 14px; color: var(--muted); font-size: .95rem; }
+    .case-card ul { display: grid; gap: 9px; margin-top: 14px; padding-left: 18px; color: #c9c1b5; font-size: .9rem; }
+    .case-card li::marker { color: var(--gold); }
+    .architecture-diagram {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      align-items: center;
+      padding: 28px;
+      border: 1px solid #2b2a25;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #11110f, #080807);
+    }
+    .arch-node {
+      position: relative;
+      min-height: 125px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      padding: 20px;
+      border: 1px solid #34322d;
+      border-radius: 18px;
+      background: rgba(255,255,255,.025);
+    }
+    .arch-node:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      top: 50%;
+      width: 16px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .arch-node strong { color: var(--paper); font: 800 1rem/1.1 "Manrope", sans-serif; }
+    .arch-node span { color: var(--muted); font-size: .78rem; }
+    .evidence-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+    .evidence-card {
+      padding: 22px;
+      border: 1px solid #2b2a25;
+      border-radius: 18px;
+      background: rgba(255,255,255,.025);
+    }
+    .evidence-card h3 { color: var(--gold-light); font: 800 1.05rem/1.1 "Manrope", sans-serif; }
+    .evidence-card ul { display: grid; gap: 8px; margin-top: 13px; padding-left: 18px; color: #c6beb2; font-size: .88rem; }
+    .evidence-card li::marker { color: var(--gold); }
+    .impact-section { background: var(--paper); color: #171714; }
+    .impact-section .eyebrow { color: #9a6d0a; }
+    .impact-section .section-copy { color: #5e5b55; }
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 42px;
+    }
+    .impact-card {
+      min-height: 210px;
+      padding: 24px;
+      border: 1px solid #d8d1c4;
+      border-radius: var(--radius);
+      background: #ebe5d9;
+    }
+    .impact-card h3 { font: 800 1.2rem/1.15 "Manrope", sans-serif; letter-spacing: -.025em; }
+    .impact-card p { margin-top: 12px; color: #625d55; font-size: .92rem; }
+    .impact-card strong { display: block; color: #9a6d0a; font: 800 1.9rem/1 "Manrope", sans-serif; }
+    .work-method {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 50px;
+      align-items: start;
+      margin-top: 45px;
+    }
+    .method-statement {
+      padding: 32px;
+      border: 1px solid #2b2a25;
+      border-radius: var(--radius);
+      background: var(--panel);
+      color: #d8d0c4;
+      font: 650 clamp(1.25rem, 2.4vw, 2rem)/1.28 "Manrope", sans-serif;
+      letter-spacing: -.03em;
+    }
+    .method-list { display: grid; gap: 14px; }
+    .method-list div {
+      padding: 22px;
+      border: 1px solid #2b2a25;
+      border-radius: 18px;
+      background: rgba(255,255,255,.025);
+    }
+    .method-list h3 { color: var(--gold-light); font: 800 1.05rem/1.1 "Manrope", sans-serif; }
+    .method-list p { margin-top: 8px; color: var(--muted); font-size: .92rem; }
+    .repo-checklist { display: grid; gap: 10px; margin-top: 8px; padding-left: 18px; color: #c6beb2; font-size: .88rem; }
+    .repo-checklist li::marker { color: var(--gold); }
 
     .about { background: var(--paper); color: #171714; }
     .about .eyebrow { color: #9a6d0a; }
@@ -399,6 +512,8 @@
     .cv-contact a:hover { color: #8a6108; }
     .cv-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
     .cv-list li { padding: 7px 10px; border: 1px solid #d1c8b8; border-radius: 99px; color: #57534c; font-size: .75rem; }
+    .cv-bullets { display: grid; gap: 9px; padding-left: 18px; color: #656159; font-size: .9rem; }
+    .cv-bullets li::marker { color: #bd8610; }
     .cv-summary { color: #56524b; font-size: 1rem; }
     .cv-entry { position: relative; padding-left: 25px; }
     .cv-entry + .cv-entry { margin-top: 30px; }
@@ -592,6 +707,9 @@
       .proof-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .projects-head { align-items: start; flex-direction: column; }
       .project-card, .project-card:first-child, .project-card:nth-child(2), .project-card:nth-child(3), .project-card:nth-child(4) { grid-column: 1 / -1; }
+      .case-card, .architecture-diagram { grid-column: 1 / -1; }
+      .architecture-diagram, .evidence-grid, .impact-grid, .work-method { grid-template-columns: 1fr; }
+      .arch-node:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -16px; width: 1px; height: 16px; }
       .about-mark { display: none; }
       .skill-row { grid-template-columns: 45px 1fr; }
       .skill-row p { grid-column: 2; }
@@ -667,12 +785,12 @@
       </a>
       <div class="nav-links" id="nav-links">
         <a href="#projects">Work</a>
-        <a href="#system-design">System</a>
-        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#case-studies">Case Study</a>
+        <a href="#how-i-work">Process</a>
         <a href="#skills">Skills</a>
         <a href="#github-activity">GitHub</a>
         <a href="#cv">CV</a>
-        <a href="#cover-letter">Cover Letter</a>
         <a href="#contact">Contact</a>
       </div>
       <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
@@ -687,13 +805,18 @@
           <div class="availability"><span></span> Open to UK software engineering roles</div>
           <h1>Software products, <em>built end to end.</em></h1>
           <p class="hero-copy">I’m Alliy Akorede Ajadi, a full-stack software engineer building modern web applications with React, Next.js, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. My current focus is FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms while actively seeking Software Engineering opportunities in the UK.</p>
+          <div class="stack-glance" aria-label="Tech stack at a glance">
+            <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Supabase</span><span>REST APIs</span><span>Git</span><span>Docker (Learning)</span>
+          </div>
           <div class="hero-actions">
             <a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
             <a class="button secondary" href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-art" aria-label="The Philosopher emblem">
-          <div class="portrait-frame"><img src="YOUR-LOGO-HERE.png" alt="The Philosopher — Alliy Akorede Ajadi"></div>
+          <div class="portrait-frame">
+            <img src="YOUR-LOGO-HERE.png" alt="The Philosopher — Alliy Akorede Ajadi">
+          </div>
           <div class="code-note" aria-hidden="true"><b>const</b> approach = {<br>&nbsp; craft: <i>"thoughtful"</i>,<br>&nbsp; code: <i>"clean"</i><br>};</div>
         </div>
       </div>
@@ -888,6 +1011,126 @@
       </div>
     </section>
 
+    <section class="impact-section" id="impact">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">Impact</span><h2 class="section-title">Engineering outcomes, not just features.</h2></div>
+          <p class="section-copy">FundedScope is my strongest evidence because it shows product thinking, architecture, data modelling, authentication, APIs, SEO, and deployment working together.</p>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card reveal"><strong>24+</strong><h3>Prop firms modelled</h3><p>Designed structured data around firms, account types, rules, fees, review signals, and comparison criteria.</p></article>
+          <article class="impact-card reveal"><strong>40+</strong><h3>Brokers compared</h3><p>Built broker data flows for searchable, comparable pages that help traders assess platforms more clearly.</p></article>
+          <article class="impact-card reveal"><strong>Auth</strong><h3>Protected user flows</h3><p>Implemented Supabase authentication for sign-in, protected routes, account context, and future personalisation.</p></article>
+          <article class="impact-card reveal"><strong>SQL</strong><h3>Scalable schema design</h3><p>Created a PostgreSQL data foundation that can grow as new brokers, prop firms, and comparison fields are added.</p></article>
+          <article class="impact-card reveal"><strong>REST</strong><h3>API-driven features</h3><p>Developed REST API structures to support comparison, search, and reusable product data across the application.</p></article>
+          <article class="impact-card reveal"><strong>SEO</strong><h3>Production-ready pages</h3><p>Built responsive, SEO-conscious pages for public discovery while keeping the platform useful on desktop and mobile.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="case-studies">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">Engineering decisions</span><h2 class="section-title">FundedScope as a case study.</h2></div>
+          <p class="section-copy">A short view of the problem, architecture, technical decisions, trade-offs, and next improvements behind the product.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <h3>Problem</h3>
+            <p>Traders lacked a single platform to compare prop firms and brokers using transparent data, reviews, spreads, account rules, and market context.</p>
+          </article>
+          <article class="case-card reveal">
+            <h3>Solution</h3>
+            <p>Designed and built a full-stack SaaS platform with authentication, PostgreSQL-backed data, REST APIs, SEO optimisation, comparison tools, and responsive UI.</p>
+          </article>
+          <article class="case-card reveal">
+            <h3>Challenges</h3>
+            <ul>
+              <li>Structuring broker and prop firm data for comparison.</li>
+              <li>Designing protected routes and authentication flows.</li>
+              <li>Keeping SEO pages useful while supporting dynamic data.</li>
+              <li>Deploying across frontend, backend, database, and custom domain.</li>
+            </ul>
+          </article>
+          <div class="architecture-diagram reveal" aria-label="FundedScope architecture diagram">
+            <div class="arch-node"><strong>Next.js Frontend</strong><span>Responsive UI, SEO pages, comparison screens</span></div>
+            <div class="arch-node"><strong>REST API</strong><span>Node.js and Express routes for product data</span></div>
+            <div class="arch-node"><strong>PostgreSQL</strong><span>Supabase database for brokers and prop firms</span></div>
+            <div class="arch-node"><strong>Authentication</strong><span>Supabase auth, protected routes, user sessions</span></div>
+          </div>
+          <article class="case-card reveal">
+            <h3>Key Decisions</h3>
+            <ul>
+              <li>Used PostgreSQL to keep broker and prop firm data structured.</li>
+              <li>Used Supabase to speed up authentication and database workflows.</li>
+              <li>Built comparison features around reusable data fields.</li>
+            </ul>
+          </article>
+          <article class="case-card reveal">
+            <h3>Trade-offs</h3>
+            <ul>
+              <li>Prioritised clear public comparison pages before deeper user personalisation.</li>
+              <li>Started with manual QA while expanding towards automated tests.</li>
+              <li>Kept the first architecture simple so the product can ship and improve.</li>
+            </ul>
+          </article>
+          <article class="case-card reveal">
+            <h3>Next Version</h3>
+            <ul>
+              <li>Add automated unit and integration tests around APIs.</li>
+              <li>Add CI/CD checks before deployment.</li>
+              <li>Improve personalised recommendations and dashboard depth.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="evidence-grid reveal">
+          <article class="evidence-card">
+            <h3>Testing</h3>
+            <ul>
+              <li>Manual QA across desktop and mobile views.</li>
+              <li>Authentication and protected route checks.</li>
+              <li>Next step: unit, integration, and end-to-end testing.</li>
+            </ul>
+          </article>
+          <article class="evidence-card">
+            <h3>Performance</h3>
+            <ul>
+              <li>Mobile responsive interface.</li>
+              <li>SEO optimised pages.</li>
+              <li>Fast public page navigation.</li>
+              <li>Lighthouse score to be measured before publishing claims.</li>
+            </ul>
+          </article>
+          <article class="evidence-card">
+            <h3>Currently Learning</h3>
+            <ul>
+              <li>AWS Cloud Practitioner.</li>
+              <li>Docker and container workflows.</li>
+              <li>Kubernetes fundamentals.</li>
+              <li>CI/CD pipelines.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-i-work">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div><span class="eyebrow">How I work</span><h2 class="section-title">Problem first. Architecture second. Code with intent.</h2></div>
+          <p class="section-copy">A short view of the engineering mindset I bring to full-stack product work.</p>
+        </div>
+        <div class="work-method reveal">
+          <p class="method-statement">I approach software by understanding the problem first, designing maintainable solutions, and then building scalable, secure applications with clean architecture and attention to user experience.</p>
+          <div class="method-list">
+            <div><h3>Understand the user problem</h3><p>I clarify what the feature needs to solve before choosing tools, data structures, or UI patterns.</p></div>
+            <div><h3>Design maintainable systems</h3><p>I separate UI, API, database, authentication, and deployment concerns so the product can keep growing.</p></div>
+            <div><h3>Ship, test, improve</h3><p>I use manual QA today, document trade-offs honestly, and am building towards automated testing and CI/CD.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="shots-section" id="fundedscope-views">
       <div class="container">
         <div class="projects-head reveal">
@@ -1056,6 +1299,22 @@ Custom domain</code>
             </div>
             <p>Language mix across public repositories, useful for a quick recruiter scan of technical focus.</p>
           </article>
+          <article class="github-panel reveal">
+            <h3>Repositories to Pin</h3>
+            <div class="github-stat-card">
+              <div class="github-stat-top">
+                <strong>Best evidence</strong>
+                <span>Recruiter path</span>
+              </div>
+              <ul class="repo-checklist">
+                <li>FundedScope / PROP-FIRM-INTELLIGENCE</li>
+                <li>Philosopher Store</li>
+                <li>Portfolio</li>
+                <li>M365 Security Awareness</li>
+              </ul>
+            </div>
+            <p>Each pinned repository should include screenshots, install steps, tech stack, architecture notes, features, and future improvements.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -1084,7 +1343,7 @@ Custom domain</code>
                   <a href="https://wa.me/447777111757" target="_blank" rel="noreferrer">+44 7777 111757</a>
                   <a href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">github.com/RAIDEENNNN</a>
                   <a href="https://linkedin.com/in/alliy-ajadi" target="_blank" rel="noreferrer">linkedin.com/in/alliy-ajadi</a>
-                  <span>Nigeria &amp; United Kingdom · Open to remote work</span>
+                  <span>Based in Kent, United Kingdom · Open to relocation · Open to remote/hybrid work</span>
                 </div>
               </div>
 
@@ -1099,10 +1358,19 @@ Custom domain</code>
               </div>
 
               <div class="cv-block">
-                <h3 class="cv-heading">Core strengths</h3>
+                <h3 class="cv-heading">Technical strengths</h3>
                 <ul class="cv-list">
-                  <li>Responsive design</li><li>Clean code</li><li>Problem solving</li>
-                  <li>API development</li><li>SEO optimisation</li><li>Product thinking</li>
+                  <li>Authentication &amp; authorization</li><li>REST API design</li><li>Database design</li>
+                  <li>Responsive web applications</li><li>Performance optimization</li><li>SEO optimisation</li>
+                </ul>
+              </div>
+
+              <div class="cv-block">
+                <h3 class="cv-heading">GitHub</h3>
+                <ul class="cv-list">
+                  <li>14 public repositories</li>
+                  <li>Active portfolio</li>
+                  <li>Regular commits</li>
                 </ul>
               </div>
             </aside>
@@ -1110,7 +1378,7 @@ Custom domain</code>
             <div class="cv-main">
               <div class="cv-block">
                 <h3 class="cv-heading">Professional profile</h3>
-                <p class="cv-summary">Full-stack software engineer with experience building modern web applications using Next.js, React, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. Passionate about creating scalable software with excellent user experience. Currently developing FundedScope, a trading intelligence platform featuring authentication, APIs, database design, SEO, deployment, and real-world comparison tools.</p>
+                <p class="cv-summary">Full-stack software engineer building modern web applications with Next.js, React, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. Currently developing FundedScope, a SaaS trading intelligence platform featuring authentication, protected routes, database-backed comparison tools, SEO-focused pages, and production deployment.</p>
               </div>
 
               <div class="cv-block">
@@ -1118,87 +1386,72 @@ Custom domain</code>
                 <article class="cv-entry">
                   <h3>Independent Full-Stack Software Engineer</h3>
                   <p class="cv-meta">2025-Present · Personal projects and product engineering</p>
-                  <p>Built FundedScope, developed multiple production-ready websites, designed backend APIs, deployed applications, worked with databases, and built responsive interfaces across desktop and mobile.</p>
+                  <ul class="cv-bullets">
+                    <li>Designed and developed 10+ web applications across SaaS, e-commerce, productivity, cybersecurity, and business websites.</li>
+                    <li>Built REST APIs using Node.js and Express to support comparison, search, and application data flows.</li>
+                    <li>Designed PostgreSQL schemas supporting FundedScope data for 24+ prop firms and 40+ brokers.</li>
+                    <li>Implemented authentication and protected routes with Supabase.</li>
+                    <li>Deployed production applications across Netlify, Vercel, Railway, and custom domains.</li>
+                    <li>Built responsive interfaces for desktop and mobile users.</li>
+                  </ul>
                 </article>
               </div>
 
               <div class="cv-block">
-                <h3 class="cv-heading">Selected project experience</h3>
+                <h3 class="cv-heading">Selected projects</h3>
                 <article class="cv-entry">
                   <h3>FundedScope</h3>
                   <p class="cv-meta">Full-stack trading intelligence platform · Centrepiece project</p>
-                  <p>Built a trading intelligence platform with Supabase authentication, PostgreSQL schema design, REST API routes, SEO-focused pages, deployment, and broker and prop firm comparison tools.</p>
+                  <p>Designed a PostgreSQL schema supporting 24+ prop firms and 40+ brokers, built authentication and protected routes with Supabase, and developed REST APIs to power comparison and search features.</p>
                 </article>
                 <article class="cv-entry">
                   <h3>Philosopher Store</h3>
                   <p class="cv-meta">E-commerce development · Featured project</p>
-                  <p>Built a responsive online storefront for gadgets and games with themed product categories, shopping cart and checkout journeys, and Stripe payment integration.</p>
+                  <p>Built a responsive online storefront with product categories, cart state, checkout journeys, and payment-focused user flows.</p>
                 </article>
                 <article class="cv-entry">
                   <h3>TaskFlow</h3>
                   <p class="cv-meta">Full-stack product development · Featured project</p>
-                  <p>Developed a collaborative Kanban application with drag and drop task management, search, team workflows, and analytics for clearer project tracking.</p>
+                  <p>Developed a Kanban-style productivity application with drag-and-drop task management, search, analytics, and team workflow features.</p>
                 </article>
                 <article class="cv-entry">
                   <h3>M365 Security Awareness</h3>
                   <p class="cv-meta">Cybersecurity education · Featured project</p>
                   <p>Created an educational Microsoft 365 sign-in simulation incorporating an MFA flow, cybersecurity survey, and data visualisation to support security-awareness learning.</p>
                 </article>
-                <article class="cv-entry">
-                  <h3>Trade House Africa</h3>
-                  <p class="cv-meta">Business web development · Featured project</p>
-                  <p>Designed and developed a responsive company website that communicates services clearly and guides prospective clients towards action.</p>
-                </article>
-                <article class="cv-entry">
-                  <h3>Seyidalliy Groceries</h3>
-                  <p class="cv-meta">Grocery commerce · Netlify-hosted project</p>
-                  <p>Built a grocery storefront for imported Nigerian goods with product-led presentation, responsive layouts, and clear ordering pathways.</p>
-                </article>
-                <article class="cv-entry">
-                  <h3>Seyidalliy Cosmetics</h3>
-                  <p class="cv-meta">Wholesale cosmetics website · Netlify-hosted project</p>
-                  <p>Created a cosmetics business website focused on brand credibility, wholesale messaging, mobile responsiveness, and customer enquiry routes.</p>
-                </article>
-                <article class="cv-entry">
-                  <h3>Just Fabulous</h3>
-                  <p class="cv-meta">Fashion brand website · Netlify-hosted project</p>
-                  <p>Designed and built a fashion-focused brand site with strong visual presentation, product-led sections, and a responsive customer experience.</p>
-                </article>
-                <article class="cv-entry">
-                  <h3>ChopNow</h3>
-                  <p class="cv-meta">Restaurant commerce · Featured project</p>
-                  <p>Built a reusable restaurant storefront with menu filtering, persistent cart functionality, delivery pricing, and WhatsApp checkout.</p>
-                </article>
-                <article class="cv-entry">
-                  <h3>Polanco Motors</h3>
-                  <p class="cv-meta">Automotive platform · Featured project</p>
-                  <p>Created a premium dealership website with vehicle inventory, finance estimation, promotions, detailed product views, and enquiry journeys.</p>
-                </article>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Education</h3>
-                <p class="cv-summary">Diploma and foundation programme details available on request. Relevant coursework and independent learning include web development, full-stack application architecture, databases, REST APIs, authentication, deployment, and responsive interface design.</p>
+                <article class="cv-entry">
+                  <h3>Diploma in Software Engineering</h3>
+                  <p class="cv-meta">Institution name · Year completed to add</p>
+                  <p>Relevant study includes web development, full-stack application architecture, databases, REST APIs, authentication, deployment, and responsive interface design.</p>
+                </article>
+                <article class="cv-entry">
+                  <h3>Foundation Programme</h3>
+                  <p class="cv-meta">Institution name · Year completed to add</p>
+                  <p>Completed foundation-level study supporting software engineering, problem analysis, and technical communication.</p>
+                </article>
               </div>
 
               <div class="cv-block">
-                <h3 class="cv-heading">Achievements</h3>
+                <h3 class="cv-heading">Highlights</h3>
                 <ul class="cv-list">
-                  <li>Built multiple production-ready web applications</li>
-                  <li>Designed scalable REST APIs</li>
-                  <li>Deployed cloud-hosted applications</li>
-                  <li>Developed responsive mobile-first interfaces</li>
-                  <li>Created comparison tools for a real product idea</li>
+                  <li>Built FundedScope, a full-stack SaaS platform</li>
+                  <li>Designed and deployed multiple production websites</li>
+                  <li>Experience with authentication, APIs, PostgreSQL, and SEO</li>
+                  <li>10+ public repositories and active portfolio development</li>
                 </ul>
                 <p class="cv-note">References and additional background information are available on request.</p>
               </div>
 
               <div class="cv-block">
-                <h3 class="cv-heading">Planned certifications</h3>
+                <h3 class="cv-heading">Certifications</h3>
                 <ul class="cv-list">
-                  <li>AWS Cloud Practitioner</li>
-                  <li>GitHub Foundations</li>
-                  <li>Microsoft Azure Fundamentals</li>
+                  <li>AWS Cloud Practitioner · In progress</li>
+                  <li>GitHub Foundations · Planned</li>
+                  <li>Microsoft Azure Fundamentals · Planned</li>
                 </ul>
               </div>
             </div>
@@ -1219,7 +1472,7 @@ Custom domain</code>
             <div>
               <div class="cover-details">
                 <strong>Alliy Akorede Ajadi</strong>
-                <span>Full-Stack Software Engineer · Nigeria &amp; United Kingdom</span>
+                <span>Full-Stack Software Engineer · Based in Kent, United Kingdom</span>
                 <a href="mailto:ajadialliy288@gmail.com">ajadialliy288@gmail.com</a>
                 <a href="https://github.com/RAIDEENNNN" target="_blank" rel="noreferrer">github.com/RAIDEENNNN</a>
                 <a href="https://linkedin.com/in/alliy-ajadi" target="_blank" rel="noreferrer">linkedin.com/in/alliy-ajadi</a>
@@ -1234,7 +1487,7 @@ Custom domain</code>
           <div class="cover-body">
             <p>I am writing to express my interest in software engineering opportunities where I can contribute full-stack engineering skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
             <p>My strongest project is FundedScope, a trading intelligence platform built around broker and prop firm comparison tools. It demonstrates the kind of work I want to keep doing professionally: taking a real product idea and developing the authentication, PostgreSQL data model, REST API routes, SEO-focused pages, deployment workflow, and user-facing features needed to make it useful.</p>
-            <p>I also have experience creating projects such as Philosopher Store, TaskFlow, M365 Security Awareness, Trade House Africa, Seyidalliy Groceries, Seyidalliy Cosmetics, Just Fabulous, ChopNow, and Polanco Motors. Across these projects, I have focused on building clear, usable, reliable applications rather than only completing small tutorial exercises.</p>
+            <p>I also have experience creating projects such as Philosopher Store, TaskFlow, and M365 Security Awareness, with additional client and portfolio projects available on my website and GitHub. Across these projects, I have focused on building clear, usable, reliable applications rather than only completing small tutorial exercises.</p>
             <p>I am comfortable with JavaScript, TypeScript, SQL, React, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, Supabase, Prisma, Git, GitHub, Postman, Netlify, Railway, and Vercel. More importantly, I bring curiosity, discipline, and ownership: I like understanding the reason behind a feature before building it, then shaping the technical solution around the real problem.</p>
             <p>I would welcome the opportunity to bring that same care to your team. I am confident I can contribute to software that is secure, scalable, polished, and genuinely useful to the people who depend on it.</p>
             <p>Thank you for your time and consideration. I would be glad to discuss how my skills and project experience can support your goals.</p>
@@ -1317,7 +1570,7 @@ Custom domain</code>
         </div>
       </div>
       <div class="footer-availability" aria-label="Availability">
-        <span>Currently based in London</span>
+        <span>Currently based in Kent</span>
         <span>Available for full-time Software Engineering roles</span>
         <span>Open to relocation</span>
         <span>Open to hybrid</span>
