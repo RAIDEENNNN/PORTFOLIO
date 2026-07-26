@@ -7,11 +7,11 @@
   <meta name="theme-color" content="#080807">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alliy Akorede Ajadi | Full-Stack Software Engineer">
-  <meta property="og:description" content="Full-stack software engineer building FundedScope, a SaaS trading intelligence platform with authentication, PostgreSQL, REST APIs, SEO, and responsive UI.">
+  <meta property="og:description" content="Full-stack software engineer specializing in scalable web applications, REST APIs, authentication, PostgreSQL, Supabase, and production deployments.">
   <meta property="og:image" content="YOUR-LOGO-HERE.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Alliy Akorede Ajadi | Full-Stack Software Engineer">
-  <meta name="twitter:description" content="Full-stack software engineer building production-ready web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, and Supabase.">
+  <meta name="twitter:description" content="Full-stack software engineer specializing in scalable web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, and Supabase.">
   <meta name="twitter:image" content="YOUR-LOGO-HERE.png">
   <title>Alliy Akorede Ajadi | Full-Stack Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -514,6 +514,8 @@
     .cv-list li { padding: 7px 10px; border: 1px solid #d1c8b8; border-radius: 99px; color: #57534c; font-size: .75rem; }
     .cv-bullets { display: grid; gap: 9px; padding-left: 18px; color: #656159; font-size: .9rem; }
     .cv-bullets li::marker { color: #bd8610; }
+    .cv-skill-groups { display: grid; gap: 14px; }
+    .cv-skill-group h4 { margin-bottom: 7px; color: #171714; font: 800 .78rem "Manrope", sans-serif; letter-spacing: -.01em; }
     .cv-summary { color: #56524b; font-size: 1rem; }
     .cv-entry { position: relative; padding-left: 25px; }
     .cv-entry + .cv-entry { margin-top: 30px; }
@@ -755,12 +757,19 @@
       #cv .container { width: 100%; }
       .cv-shell { border: 0; border-radius: 0; box-shadow: none; }
       .cv-top { padding: 18px 20px 24px; }
-      .cv-top h2 { font-size: 3rem; }
+      .cv-top h2 { font-size: 2.55rem; }
       .cv-body { grid-template-columns: .72fr 1.28fr; }
-      .cv-sidebar, .cv-main { padding: 25px 20px; }
+      .cv-sidebar, .cv-main { padding: 18px 18px; }
       .cv-sidebar { border-right: 1px solid #d8d1c4; border-bottom: 0; }
-      .cv-block + .cv-block { margin-top: 25px; }
-      .cv-entry + .cv-entry { margin-top: 20px; }
+      .cv-block + .cv-block { margin-top: 16px; }
+      .cv-entry + .cv-entry { margin-top: 13px; }
+      .cv-summary, .cv-entry p, .cv-bullets { font-size: .82rem; line-height: 1.42; }
+      .cv-bullets { gap: 4px; }
+      .cv-list { gap: 5px; }
+      .cv-list li { padding: 4px 7px; font-size: .67rem; }
+      .cv-heading { margin-bottom: 9px; }
+      .cv-entry h3 { font-size: .98rem; }
+      .cv-entry .cv-meta { margin-bottom: 5px; }
       .reveal { opacity: 1 !important; transform: none !important; }
       body.print-cover::before,
       body.print-cover .site-header,
@@ -1104,9 +1113,8 @@
           <article class="evidence-card">
             <h3>Currently Learning</h3>
             <ul>
-              <li>AWS Cloud Practitioner.</li>
+              <li>AWS programming certificate completed.</li>
               <li>Docker and container workflows.</li>
-              <li>Kubernetes fundamentals.</li>
               <li>CI/CD pipelines.</li>
             </ul>
           </article>
@@ -1330,6 +1338,7 @@ Custom domain</code>
             </div>
             <div class="cv-actions">
               <button class="button" id="print-cv" type="button">Print / Save CV <span aria-hidden="true">↓</span></button>
+              <a class="button secondary" href="ats-cv.txt" download>ATS CV ↗</a>
               <a class="button secondary" href="mailto:ajadialliy288@gmail.com">Contact me ↗</a>
             </div>
           </header>
@@ -1349,50 +1358,49 @@ Custom domain</code>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Technical skills</h3>
-                <ul class="cv-list">
-                  <li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>React</li>
-                  <li>Next.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Express.js</li>
-                  <li>REST APIs</li><li>PostgreSQL</li><li>Supabase</li><li>Prisma</li>
-                  <li>Git</li><li>GitHub</li><li>Postman</li><li>Vercel</li>
-                </ul>
+                <div class="cv-skill-groups">
+                  <div class="cv-skill-group"><h4>Languages</h4><ul class="cv-list"><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML5</li><li>CSS3</li></ul></div>
+                  <div class="cv-skill-group"><h4>Frontend</h4><ul class="cv-list"><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Responsive design</li><li>Accessibility</li></ul></div>
+                  <div class="cv-skill-group"><h4>Backend &amp; API</h4><ul class="cv-list"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JSON</li><li>Authentication</li><li>Authorization</li></ul></div>
+                  <div class="cv-skill-group"><h4>Database</h4><ul class="cv-list"><li>PostgreSQL</li><li>Prisma</li><li>Supabase</li></ul></div>
+                  <div class="cv-skill-group"><h4>DevOps &amp; deployment</h4><ul class="cv-list"><li>Git</li><li>GitHub</li><li>Netlify</li><li>Railway</li><li>Vercel</li><li>Docker · Learning</li></ul></div>
+                  <div class="cv-skill-group"><h4>Tools</h4><ul class="cv-list"><li>VS Code</li><li>Postman</li><li>Figma</li><li>npm</li><li>GitHub Actions · Learning</li></ul></div>
+                </div>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Technical strengths</h3>
                 <ul class="cv-list">
-                  <li>Authentication &amp; authorization</li><li>REST API design</li><li>Database design</li>
-                  <li>Responsive web applications</li><li>Performance optimization</li><li>SEO optimisation</li>
+                  <li>Authentication &amp; authorization</li><li>REST API design</li><li>PostgreSQL database design</li>
+                  <li>API integration</li><li>Full-stack architecture</li><li>Component-based development</li>
+                  <li>Software debugging</li><li>Responsive web applications</li><li>Performance optimization</li><li>SEO optimisation</li>
                 </ul>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">GitHub</h3>
-                <ul class="cv-list">
-                  <li>14 public repositories</li>
-                  <li>Active portfolio</li>
-                  <li>Regular commits</li>
-                </ul>
+                <p class="cv-summary">14+ public repositories showcasing full-stack software engineering, REST APIs, PostgreSQL, authentication systems, and SaaS applications.</p>
               </div>
             </aside>
 
             <div class="cv-main">
               <div class="cv-block">
                 <h3 class="cv-heading">Professional profile</h3>
-                <p class="cv-summary">Full-stack software engineer building modern web applications with Next.js, React, TypeScript, Node.js, Express, PostgreSQL, Supabase, and REST APIs. Currently developing FundedScope, a SaaS trading intelligence platform featuring authentication, protected routes, database-backed comparison tools, SEO-focused pages, and production deployment.</p>
+                <p class="cv-summary">Full-stack software engineer specializing in building scalable web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and Supabase. Experienced in designing REST APIs, authentication systems, database architecture, and production deployments. Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms. Passionate about creating secure, maintainable, and user-focused software.</p>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Experience</h3>
                 <article class="cv-entry">
-                  <h3>Independent Full-Stack Software Engineer</h3>
-                  <p class="cv-meta">2025-Present · Personal projects and product engineering</p>
+                  <h3>Independent Software Engineer</h3>
+                  <p class="cv-meta">2025-Present · Product engineering and full-stack development</p>
                   <ul class="cv-bullets">
-                    <li>Designed and developed 10+ web applications across SaaS, e-commerce, productivity, cybersecurity, and business websites.</li>
-                    <li>Built REST APIs using Node.js and Express to support comparison, search, and application data flows.</li>
-                    <li>Designed PostgreSQL schemas supporting FundedScope data for 24+ prop firms and 40+ brokers.</li>
-                    <li>Implemented authentication and protected routes with Supabase.</li>
-                    <li>Deployed production applications across Netlify, Vercel, Railway, and custom domains.</li>
-                    <li>Built responsive interfaces for desktop and mobile users.</li>
+                    <li>Built and deployed 10+ production web applications across SaaS, e-commerce, productivity, cybersecurity, and business websites.</li>
+                    <li>Designed scalable PostgreSQL database schemas supporting FundedScope data for 24+ prop firms and 40+ brokers.</li>
+                    <li>Developed secure authentication systems and protected routes with Supabase.</li>
+                    <li>Built REST APIs supporting search, comparison, and application data flows.</li>
+                    <li>Delivered responsive, mobile-first user interfaces using React, Next.js, and Tailwind CSS.</li>
+                    <li>Deployed applications using Netlify, Railway, Vercel, and custom domains.</li>
                   </ul>
                 </article>
               </div>
@@ -1425,33 +1433,50 @@ Custom domain</code>
                 <h3 class="cv-heading">Education</h3>
                 <article class="cv-entry">
                   <h3>Diploma in Software Engineering</h3>
-                  <p class="cv-meta">Institution name · Year completed to add</p>
+                  <p class="cv-meta">Aptech · 2023-2025</p>
                   <p>Relevant study includes web development, full-stack application architecture, databases, REST APIs, authentication, deployment, and responsive interface design.</p>
                 </article>
                 <article class="cv-entry">
-                  <h3>Foundation Programme</h3>
-                  <p class="cv-meta">Institution name · Year completed to add</p>
-                  <p>Completed foundation-level study supporting software engineering, problem analysis, and technical communication.</p>
+                  <h3>International Foundation Year (IFY) in Computer Science</h3>
+                  <p class="cv-meta">Foundation course · 2024-2025</p>
+                  <p>Completed foundation-level study in computer science, supporting software engineering, problem analysis, and technical communication.</p>
                 </article>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Highlights</h3>
                 <ul class="cv-list">
-                  <li>Built FundedScope, a full-stack SaaS platform</li>
-                  <li>Designed and deployed multiple production websites</li>
-                  <li>Experience with authentication, APIs, PostgreSQL, and SEO</li>
-                  <li>10+ public repositories and active portfolio development</li>
+                  <li>Built a production-ready SaaS platform</li>
+                  <li>Designed scalable PostgreSQL database schemas</li>
+                  <li>Built REST APIs powering real applications</li>
+                  <li>Developed 10+ full-stack web applications</li>
+                  <li>Experience deploying production software</li>
+                  <li>Strong React and Next.js ecosystem knowledge</li>
                 </ul>
                 <p class="cv-note">References and additional background information are available on request.</p>
               </div>
 
               <div class="cv-block">
-                <h3 class="cv-heading">Certifications</h3>
+                <h3 class="cv-heading">Engineering principles</h3>
                 <ul class="cv-list">
-                  <li>AWS Cloud Practitioner · In progress</li>
+                  <li>Clean, maintainable code</li>
+                  <li>Scalable architecture</li>
+                  <li>Security-first development</li>
+                  <li>API-first design</li>
+                  <li>User-centred engineering</li>
+                  <li>Performance-conscious development</li>
+                  <li>Continuous learning</li>
+                </ul>
+              </div>
+
+              <div class="cv-block">
+                <h3 class="cv-heading">Certifications &amp; currently studying</h3>
+                <ul class="cv-list">
+                  <li>Certificate in AWS Programming · Feb 2026-Jun 2026</li>
+                  <li>Docker · Learning</li>
                   <li>GitHub Foundations · Planned</li>
                   <li>Microsoft Azure Fundamentals · Planned</li>
+                  <li>CI/CD pipelines · Learning</li>
                 </ul>
               </div>
             </div>
@@ -1466,7 +1491,7 @@ Custom domain</code>
           <aside class="cover-meta">
             <div>
               <span class="cover-kicker">Cover Letter</span>
-              <h2>Dear Hiring Manager,</h2>
+              <h2>Dear Engineering Hiring Team,</h2>
               <p>A concise introduction for UK software engineering and full-stack software engineer applications.</p>
             </div>
             <div>
@@ -1485,12 +1510,12 @@ Custom domain</code>
           </aside>
 
           <div class="cover-body">
-            <p>I am writing to express my interest in software engineering opportunities where I can contribute full-stack engineering skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
+            <p>I am excited to apply for software engineering opportunities where I can contribute full-stack engineering skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
             <p>My strongest project is FundedScope, a trading intelligence platform built around broker and prop firm comparison tools. It demonstrates the kind of work I want to keep doing professionally: taking a real product idea and developing the authentication, PostgreSQL data model, REST API routes, SEO-focused pages, deployment workflow, and user-facing features needed to make it useful.</p>
-            <p>I also have experience creating projects such as Philosopher Store, TaskFlow, and M365 Security Awareness, with additional client and portfolio projects available on my website and GitHub. Across these projects, I have focused on building clear, usable, reliable applications rather than only completing small tutorial exercises.</p>
+            <p>Alongside FundedScope, I have designed and developed multiple full-stack applications across SaaS, e-commerce, productivity, cybersecurity, and business domains. These projects strengthened my experience in building maintainable software, designing REST APIs, working with PostgreSQL databases, and deploying production-ready applications.</p>
             <p>I am comfortable with JavaScript, TypeScript, SQL, React, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, Supabase, Prisma, Git, GitHub, Postman, Netlify, Railway, and Vercel. More importantly, I bring curiosity, discipline, and ownership: I like understanding the reason behind a feature before building it, then shaping the technical solution around the real problem.</p>
-            <p>I would welcome the opportunity to bring that same care to your team. I am confident I can contribute to software that is secure, scalable, polished, and genuinely useful to the people who depend on it.</p>
-            <p>Thank you for your time and consideration. I would be glad to discuss how my skills and project experience can support your goals.</p>
+            <p>I am excited about the opportunity to contribute to your engineering team, learn from experienced developers, and help deliver reliable software that creates value for customers. I would welcome the chance to bring the same care I have applied to my own products into a professional engineering environment.</p>
+            <p>Thank you for considering my application. I would welcome the opportunity to discuss how my software engineering experience, technical skills, and enthusiasm for building high-quality products can contribute to your team. I look forward to hearing from you.</p>
             <p class="cover-signature">Sincerely,<br>Alliy Akorede Ajadi</p>
           </div>
         </article>
@@ -1519,13 +1544,13 @@ Custom domain</code>
     <section class="cert-section" id="certifications">
       <div class="container">
         <div class="projects-head reveal">
-          <div><span class="eyebrow">Certifications</span><h2 class="section-title">Recognised credentials to support the portfolio.</h2></div>
-          <p class="section-copy">Planned certifications for the next month, chosen for relevance to UK software engineering and cloud-focused teams.</p>
+          <div><span class="eyebrow">Certifications</span><h2 class="section-title">Cloud and engineering credentials.</h2></div>
+          <p class="section-copy">A focused learning path chosen for relevance to UK software engineering, GitHub workflows, and cloud-focused teams.</p>
         </div>
         <div class="cert-grid">
-          <article class="cert-card reveal"><h3>AWS Cloud Practitioner</h3><p>Cloud fundamentals, deployment awareness, and AWS service literacy.</p></article>
-          <article class="cert-card reveal"><h3>GitHub Foundations</h3><p>Version control, collaboration workflows, repository management, and GitHub tooling.</p></article>
-          <article class="cert-card reveal"><h3>Microsoft Azure Fundamentals</h3><p>Cloud concepts, Azure services, security basics, and platform fundamentals.</p></article>
+          <article class="cert-card reveal"><h3>Certificate in AWS Programming</h3><p>Completed February 2026-June 2026, covering cloud programming foundations and AWS service literacy.</p></article>
+          <article class="cert-card reveal"><h3>GitHub Foundations</h3><p>Planned study covering version control, collaboration workflows, repository management, and GitHub tooling.</p></article>
+          <article class="cert-card reveal"><h3>Microsoft Azure Fundamentals</h3><p>Planned study covering cloud concepts, Azure services, security basics, and platform fundamentals.</p></article>
         </div>
       </div>
     </section>
@@ -1632,13 +1657,22 @@ Custom domain</code>
       });
     }
 
+    const originalTitle = document.title;
+    const printDocument = title => {
+      document.title = title;
+      window.print();
+    };
+
     document.querySelector('#year').textContent = new Date().getFullYear();
-    document.querySelector('#print-cv').addEventListener('click', () => window.print());
+    document.querySelector('#print-cv').addEventListener('click', () => printDocument('Alliy Akorede Ajadi - Software Engineer CV'));
     document.querySelector('#print-cover').addEventListener('click', () => {
       document.body.classList.add('print-cover');
-      window.print();
+      printDocument('Alliy Akorede Ajadi - Software Engineer Cover Letter');
     });
-    window.addEventListener('afterprint', () => document.body.classList.remove('print-cover'));
+    window.addEventListener('afterprint', () => {
+      document.body.classList.remove('print-cover');
+      document.title = originalTitle;
+    });
   </script>
 </body>
 </html>

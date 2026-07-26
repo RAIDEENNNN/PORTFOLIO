@@ -1,0 +1,86 @@
+Alliy Akorede Ajadi
+Full-Stack Software Engineer
+Based in Kent, United Kingdom | Open to relocation | Open to remote/hybrid work
+Email: ajadialliy288@gmail.com
+Phone: +44 7777 111757
+GitHub: https://github.com/RAIDEENNNN
+LinkedIn: https://linkedin.com/in/alliy-ajadi
+Portfolio: https://portfoliotph.netlify.app
+
+PROFESSIONAL PROFILE
+Full-stack software engineer specializing in building scalable web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and Supabase. Experienced in designing REST APIs, authentication systems, database architecture, and production deployments. Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms. Passionate about creating secure, maintainable, and user-focused software.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, SQL, HTML5, CSS3
+Frontend: React, Next.js, Tailwind CSS, Responsive Design, Accessibility
+Backend and API: Node.js, Express.js, REST APIs, JSON, Authentication, Authorization
+Database: PostgreSQL, Prisma, Supabase
+DevOps and Deployment: Git, GitHub, Netlify, Railway, Vercel, Docker (Learning)
+Tools: VS Code, Postman, Figma, npm, GitHub Actions (Learning)
+Technical Strengths: Authentication and authorization, REST API design, PostgreSQL database design, API integration, full-stack architecture, component-based development, software debugging, responsive web applications, performance optimization, SEO optimisation
+
+EXPERIENCE
+Independent Software Engineer
+2025-Present | Product Engineering and Full-Stack Development
+- Built and deployed 10+ production web applications across SaaS, e-commerce, productivity, cybersecurity, and business websites.
+- Designed scalable PostgreSQL database schemas supporting FundedScope data for 24+ prop firms and 40+ brokers.
+- Developed secure authentication systems and protected routes with Supabase.
+- Built REST APIs supporting search, comparison, and application data flows.
+- Delivered responsive, mobile-first user interfaces using React, Next.js, and Tailwind CSS.
+- Deployed applications using Netlify, Railway, Vercel, and custom domains.
+
+SELECTED PROJECTS
+FundedScope
+Full-stack trading intelligence platform
+- Designed a PostgreSQL schema supporting 24+ prop firms and 40+ brokers.
+- Built authentication and protected routes with Supabase.
+- Developed REST APIs to power comparison and search features.
+- Implemented SEO-focused pages and responsive UI for desktop and mobile.
+
+Philosopher Store
+E-commerce web application
+- Built a responsive online storefront with product categories, cart state, checkout journeys, and payment-focused user flows.
+
+TaskFlow
+Productivity application
+- Developed a Kanban-style productivity application with drag-and-drop task management, search, analytics, and team workflow features.
+
+M365 Security Awareness
+Cybersecurity education project
+- Created an educational Microsoft 365 sign-in simulation incorporating an MFA flow, cybersecurity survey, and data visualisation to support security-awareness learning.
+
+GITHUB
+14+ public repositories showcasing full-stack software engineering, REST APIs, PostgreSQL, authentication systems, and SaaS applications.
+
+EDUCATION
+Diploma in Software Engineering
+Aptech | 2023-2025
+Relevant study: web development, full-stack application architecture, databases, REST APIs, authentication, deployment, and responsive interface design.
+
+International Foundation Year (IFY) in Computer Science
+Foundation course | 2024-2025
+Relevant study: computer science foundations, software engineering foundations, problem analysis, and technical communication.
+
+CERTIFICATIONS AND CURRENTLY STUDYING
+Certificate in AWS Programming: February 2026-June 2026
+Docker: Learning
+GitHub Foundations: Planned
+Microsoft Azure Fundamentals: Planned
+CI/CD Pipelines: Learning
+
+HIGHLIGHTS
+- Built a production-ready SaaS platform.
+- Designed scalable PostgreSQL database schemas.
+- Built REST APIs powering real applications.
+- Developed 10+ full-stack web applications.
+- Experience deploying production software.
+- Strong React and Next.js ecosystem knowledge.
+
+ENGINEERING PRINCIPLES
+- Clean, maintainable code.
+- Scalable architecture.
+- Security-first development.
+- API-first design.
+- User-centred engineering.
+- Performance-conscious development.
+- Continuous learning.
