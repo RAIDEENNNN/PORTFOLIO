@@ -1,0 +1,78 @@
+Alliy Akorede Ajadi
+Forex Trader and Trading Technology Builder
+Based in Kent, United Kingdom
+Email: ajadialliy288@gmail.com
+Phone: +44 7777 111757
+Portfolio: https://portfoliotph.netlify.app
+Trading Platform Project: https://myfundedscope.com
+GitHub: https://github.com/RAIDEENNNN
+LinkedIn: https://linkedin.com/in/alliy-ajadi
+
+PROFESSIONAL PROFILE
+UK-based Forex Trader focused on XAU/USD and major FX pairs, combining price action, market structure, liquidity, ICT/SMC concepts, and disciplined risk management. Also a full-stack software engineer building trading technology through FundedScope, a SaaS platform that helps traders compare brokers and proprietary trading firms. This CV avoids unverifiable profit claims and focuses on process, research, risk management, and trading technology experience.
+
+TRADING FOCUS
+- XAU/USD and major FX pairs.
+- Price action and market structure.
+- Liquidity, session timing, and high-impact news awareness.
+- ICT/SMC concepts used as part of a broader analysis process.
+- Forex Factory calendar workflow for economic event awareness.
+
+MARKET ANALYSIS PROCESS
+- Review higher-timeframe market structure before lower-timeframe execution.
+- Identify liquidity areas, key levels, session context, and news risk.
+- Wait for planned setups instead of reacting emotionally to short-term movement.
+- Define invalidation, risk, and trade idea before considering entry.
+- Review outcomes through journaling and post-trade analysis.
+
+RISK MANAGEMENT APPROACH
+- Risk-first trading process focused on protecting capital.
+- No guaranteed profit claims or unverified performance claims.
+- Trade Explorer left blank until a verified account is connected.
+- Public trading discussion framed as education, analysis, and personal journaling.
+- Emphasis on discipline, consistency, and continuous improvement.
+
+TRADING TECHNOLOGY EXPERIENCE
+FundedScope
+Trading intelligence SaaS platform for broker and prop firm comparison.
+- Built a platform helping traders compare brokers and proprietary trading firms.
+- Designed comparison tools for trading decisions and research workflows.
+- Organised broker and prop firm data into clear, user-facing structures.
+- Built SEO-focused pages for trading-related discovery.
+- Combined trading knowledge with full-stack software engineering.
+
+SOFTWARE AND TECHNICAL SKILLS
+- Trading research and market analysis.
+- Broker and prop firm comparison workflows.
+- React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, Supabase, REST APIs.
+- Data organisation, responsive UI, SEO, deployment, and product thinking.
+
+FOREX FACTORY PROFILE DETAILS
+Suggested username/signature:
+The Philosopher | XAU/USD and Major FX | Price Action, ICT/SMC, Risk First
+
+Trading from:
+United Kingdom
+
+Trade Explorer:
+Leave blank until a verified trading account is connected and suitable for public display.
+
+Sentiment Signature:
+Leave blank until Forex Factory sentiment is used regularly.
+
+FIRST FORUM POST TEMPLATE
+Hello traders, I am The Philosopher, a UK-based gold and FX trader. I mainly analyse XAU/USD and major currency pairs using price action, market structure, liquidity and ICT/SMC concepts. I joined to document my analysis, learn from experienced traders and connect with other disciplined traders. Risk management comes first, and nothing I share should be treated as guaranteed profit.
+
+EDUCATION AND CERTIFICATIONS
+Diploma in Software Engineering
+Aptech | 2023-2025
+
+International Foundation Year (IFY) in Computer Science
+Foundation course | 2024-2025
+
+Certificate in AWS Programming
+February 2026-June 2026
+
+DISCLAIMER
+Trading involves risk. Nothing in this CV should be treated as financial advice, guaranteed performance, or a verified profit record.
+
