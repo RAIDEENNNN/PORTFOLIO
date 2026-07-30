@@ -22,10 +22,12 @@ Technical Strengths: Authentication and authorization, REST API design, PostgreS
 EXPERIENCE
 Professional Software Engineer
 Cloudflex Ltd | cloudflexsolutions.co.uk | 5 years
-- Worked professionally as a software engineer, contributing to web applications, business software, and client-focused digital solutions.
-- Built and maintained responsive user interfaces using modern frontend development practices.
-- Contributed to backend features, API integrations, debugging, testing, and production deployment workflows.
-- Collaborated on software delivery with attention to reliability, maintainability, and user experience.
+- Designed, built, and maintained client-facing web applications and business software for real users.
+- Developed responsive, accessible user interfaces using modern frontend engineering practices.
+- Built and integrated backend features, REST APIs, third-party services, and application data flows.
+- Debugged production issues, improved application reliability, and supported ongoing maintenance.
+- Contributed to deployment workflows, release preparation, testing, and post-launch improvements.
+- Collaborated with stakeholders and team members to translate business requirements into usable software.
 
 Independent Software Engineer
 2025-Present | Product Engineering and Full-Stack Development
