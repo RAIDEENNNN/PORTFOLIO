@@ -8,26 +8,26 @@ LinkedIn: https://linkedin.com/in/alliy-ajadi
 Portfolio: https://portfoliotph.netlify.app
 
 PROFESSIONAL PROFILE
-Full-stack software engineer with 5 years of professional experience at Cloudflex Ltd, specializing in scalable web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and Supabase. Experienced in REST APIs, authentication systems, database architecture, production deployments, AI-assisted software development, LLM workflows, and AI API integration. Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms.
+Full-stack software engineer with 7 years of remote development experience building and maintaining production web applications. Experienced in React, Next.js, TypeScript, Node.js, REST APIs and PostgreSQL, with practical responsibility for authentication, database design, deployment, production troubleshooting, AI-assisted development, LLM workflows and AI API integration. Built 10+ full-stack applications, including FundedScope, a trading intelligence platform covering 24+ prop firms and 40+ brokers.
 
 TECHNICAL SKILLS
 Languages: JavaScript, TypeScript, SQL, HTML5, CSS3
 Frontend: React, Next.js, Tailwind CSS, Responsive Design, Accessibility
 Backend and API: Node.js, Express.js, REST APIs, JSON, Authentication, Authorization
 Database: PostgreSQL, Prisma, Supabase
-DevOps and Deployment: Git, GitHub, Netlify, Railway, Vercel, Docker (Learning)
+DevOps and Deployment: Git, GitHub, Netlify, Railway, Vercel, AWS
 AI and Tools: AI-assisted development, prompt engineering, LLM workflows, AI API integration, code review support, VS Code, Postman, Figma, npm, GitHub Actions (Learning)
 Technical Strengths: Authentication and authorization, REST API design, PostgreSQL database design, AI-assisted engineering, AI API integration, workflow automation, API integration, full-stack architecture, component-based development, software debugging, AI-supported code review, responsive web applications, performance optimization, SEO optimisation
 
 EXPERIENCE
-Professional Software Engineer
-Cloudflex Ltd | cloudflexsolutions.co.uk | 5 years
-- Designed, built, and maintained client-facing web applications and business software for real users.
-- Developed responsive, accessible user interfaces using modern frontend engineering practices.
-- Built and integrated backend features, REST APIs, third-party services, and application data flows.
-- Debugged production issues, improved application reliability, and supported ongoing maintenance.
-- Contributed to deployment workflows, release preparation, testing, and post-launch improvements.
-- Collaborated with stakeholders and team members to translate business requirements into usable software.
+Remote Software Engineer
+Cloudflex Ltd | cloudflexsolutions.co.uk | January 2019-Present | Remote
+- Built and maintained production web applications and business software using modern frontend, backend and database practices.
+- Developed responsive, accessible user interfaces and connected them to REST APIs, databases and third-party services.
+- Worked on customer management, business operations and client website features including dashboards, forms, account flows and reporting views.
+- Diagnosed and resolved frontend, API and deployment issues, improving stability and reducing recurring support problems.
+- Collaborated remotely with stakeholders and team members using Git, GitHub, testing, release preparation and structured deployment workflows.
+Key technologies: React, Next.js, TypeScript, Node.js, Express, PostgreSQL, REST APIs, Git, GitHub, AWS, Netlify, Railway and Vercel.
 
 Independent Software Engineer
 2025-Present | Product Engineering and Full-Stack Development
@@ -41,6 +41,8 @@ Independent Software Engineer
 SELECTED PROJECTS
 FundedScope
 Full-stack trading intelligence platform
+Live: https://myfundedscope.com
+GitHub: https://github.com/RAIDEENNNN/PROP-FIRM-INTELLIGENCE
 - Designed a PostgreSQL schema supporting 24+ prop firms and 40+ brokers.
 - Built authentication and protected routes with Supabase.
 - Developed REST APIs to power comparison and search features.
@@ -48,14 +50,18 @@ Full-stack trading intelligence platform
 
 Philosopher Store
 E-commerce web application
+Live: https://raideennnn.github.io/philosopher-store/
+GitHub: https://github.com/RAIDEENNNN/philosopher-store
 - Built a responsive online storefront with product categories, cart state, checkout journeys, and payment-focused user flows.
 
 TaskFlow
 Productivity application
+GitHub: https://github.com/RAIDEENNNN/TaskFlow
 - Developed a Kanban-style productivity application with drag-and-drop task management, search, analytics, and team workflow features.
 
 M365 Security Awareness
 Cybersecurity education project
+GitHub: https://github.com/RAIDEENNNN/M365-LOGIN-DEMO
 - Created an educational Microsoft 365 sign-in simulation incorporating an MFA flow, cybersecurity survey, and data visualisation to support security-awareness learning.
 
 GITHUB
@@ -70,12 +76,8 @@ International Foundation Year (IFY) in Computer Science
 Foundation course | 2024-2025
 Relevant study: computer science foundations, software engineering foundations, problem analysis, and technical communication.
 
-CERTIFICATIONS AND CURRENTLY STUDYING
+CERTIFICATIONS
 Certificate in AWS Programming: February 2026-June 2026
-Docker: Learning
-GitHub Foundations: Planned
-Microsoft Azure Fundamentals: Planned
-CI/CD Pipelines: Learning
 
 HIGHLIGHTS
 - Built a production-ready SaaS platform.
@@ -84,12 +86,3 @@ HIGHLIGHTS
 - Developed 10+ full-stack web applications.
 - Experience deploying production software.
 - Strong React and Next.js ecosystem knowledge.
-
-ENGINEERING PRINCIPLES
-- Clean, maintainable code.
-- Scalable architecture.
-- Security-first development.
-- API-first design.
-- User-centred engineering.
-- Performance-conscious development.
-- Continuous learning.
