@@ -527,34 +527,6 @@
     .cv-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
     .cv-actions .button.secondary { color: #171714; border-color: #a8a094; }
     .cv-note { margin-top: 20px; color: #777168; font-size: .76rem; }
-    .fx-cv-section { background: #0d0d0b; padding-top: 0; }
-    .fx-cv-shell {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: clamp(28px, 5vw, 65px);
-      padding: clamp(30px, 6vw, 70px);
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      background:
-        radial-gradient(circle at 84% 14%, rgba(233,185,73,.14), transparent 34%),
-        linear-gradient(135deg, #151510, #090908);
-      box-shadow: 0 40px 110px rgba(0,0,0,.35);
-    }
-    .fx-cv-intro h2 { margin: 14px 0 20px; max-width: 650px; font: 800 clamp(2.3rem, 5vw, 4.7rem)/.96 "Manrope", sans-serif; letter-spacing: -.06em; }
-    .fx-cv-intro p { max-width: 650px; color: #bcb5aa; }
-    .fx-cv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-    .fx-cv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-    .fx-cv-card {
-      padding: 22px;
-      border: 1px solid #2b2a25;
-      border-radius: 18px;
-      background: rgba(255,255,255,.035);
-    }
-    .fx-cv-card h3 { margin-bottom: 10px; color: var(--gold-light); font: 800 .95rem "Manrope", sans-serif; letter-spacing: -.01em; }
-    .fx-cv-card p, .fx-cv-card li { color: #c5beb2; font-size: .88rem; }
-    .fx-cv-card ul { display: grid; gap: 7px; padding-left: 18px; }
-    .fx-cv-card.full { grid-column: 1 / -1; }
-
     .cover-section {
       position: relative;
       overflow: hidden;
@@ -746,8 +718,6 @@
       .cv-top { align-items: start; }
       .cv-actions { justify-content: flex-start; }
       .cv-sidebar { border-right: 0; border-bottom: 1px solid #d8d1c4; }
-      .fx-cv-shell, .fx-cv-grid { grid-template-columns: 1fr; }
-      .fx-cv-card.full { grid-column: auto; }
       .cover-letter { grid-template-columns: 1fr; }
       .cover-body { padding-left: 0; border-left: 0; border-top: 1px solid #d1c8b8; padding-top: 30px; }
       .contact-layout { grid-template-columns: 1fr; }
@@ -829,7 +799,6 @@
         <a href="#skills">Skills</a>
         <a href="#github-activity">GitHub</a>
         <a href="#cv">CV</a>
-        <a href="#forex-cv">FX CV</a>
         <a href="#contact">Contact</a>
       </div>
       <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
@@ -1394,7 +1363,7 @@ Custom domain</code>
                   <div class="cv-skill-group"><h4>Backend &amp; API</h4><ul class="cv-list"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JSON</li><li>Authentication</li><li>Authorization</li></ul></div>
                   <div class="cv-skill-group"><h4>Database</h4><ul class="cv-list"><li>PostgreSQL</li><li>Prisma</li><li>Supabase</li></ul></div>
                   <div class="cv-skill-group"><h4>DevOps &amp; deployment</h4><ul class="cv-list"><li>Git</li><li>GitHub</li><li>Netlify</li><li>Railway</li><li>Vercel</li><li>Docker · Learning</li></ul></div>
-                  <div class="cv-skill-group"><h4>Tools</h4><ul class="cv-list"><li>VS Code</li><li>Postman</li><li>Figma</li><li>npm</li><li>GitHub Actions · Learning</li></ul></div>
+                  <div class="cv-skill-group"><h4>AI &amp; tools</h4><ul class="cv-list"><li>AI-assisted development</li><li>Prompt engineering</li><li>VS Code</li><li>Postman</li><li>Figma</li><li>npm</li><li>GitHub Actions · Learning</li></ul></div>
                 </div>
               </div>
 
@@ -1402,7 +1371,7 @@ Custom domain</code>
                 <h3 class="cv-heading">Technical strengths</h3>
                 <ul class="cv-list">
                   <li>Authentication &amp; authorization</li><li>REST API design</li><li>PostgreSQL database design</li>
-                  <li>API integration</li><li>Full-stack architecture</li><li>Component-based development</li>
+                  <li>AI-assisted engineering</li><li>API integration</li><li>Full-stack architecture</li><li>Component-based development</li>
                   <li>Software debugging</li><li>Responsive web applications</li><li>Performance optimization</li><li>SEO optimisation</li>
                 </ul>
               </div>
@@ -1416,11 +1385,21 @@ Custom domain</code>
             <div class="cv-main">
               <div class="cv-block">
                 <h3 class="cv-heading">Professional profile</h3>
-                <p class="cv-summary">Full-stack software engineer specializing in building scalable web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and Supabase. Experienced in designing REST APIs, authentication systems, database architecture, and production deployments. Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms. Passionate about creating secure, maintainable, and user focused software.</p>
+                <p class="cv-summary">Full-stack software engineer with 5 years of professional experience at Cloudflex Ltd, specializing in scalable web applications using React, Next.js, TypeScript, Node.js, Express, PostgreSQL, and Supabase. Experienced in REST APIs, authentication systems, database architecture, production deployments, and AI-assisted software development. Currently building FundedScope, a SaaS platform helping traders compare brokers and proprietary trading firms.</p>
               </div>
 
               <div class="cv-block">
                 <h3 class="cv-heading">Experience</h3>
+                <article class="cv-entry">
+                  <h3>Professional Software Engineer</h3>
+                  <p class="cv-meta">Cloudflex Ltd · cloudflexsolutions.co.uk · 5 years</p>
+                  <ul class="cv-bullets">
+                    <li>Worked professionally as a software engineer, contributing to web applications, business software, and client-focused digital solutions.</li>
+                    <li>Built and maintained responsive user interfaces using modern frontend development practices.</li>
+                    <li>Contributed to backend features, API integrations, debugging, testing, and production deployment workflows.</li>
+                    <li>Collaborated on software delivery with attention to reliability, maintainability, and user experience.</li>
+                  </ul>
+                </article>
                 <article class="cv-entry">
                   <h3>Independent Software Engineer</h3>
                   <p class="cv-meta">2025-Present · Product engineering and full-stack development</p>
@@ -1515,65 +1494,6 @@ Custom domain</code>
       </div>
     </section>
 
-    <section class="fx-cv-section" id="forex-cv">
-      <div class="container">
-        <div class="fx-cv-shell reveal">
-          <div class="fx-cv-intro">
-            <span class="eyebrow">Forex Trading CV</span>
-            <h2>Forex Trader and Trading Technology Builder.</h2>
-            <p>My trading background, market-analysis process, risk-management approach and experience building technology for traders.</p>
-            <div class="fx-cv-actions">
-              <a class="button" href="forex-trading-cv-ats.txt" download>View My Forex Trading CV <span aria-hidden="true">↗</span></a>
-              <a class="button secondary" href="https://myfundedscope.com" target="_blank" rel="noreferrer">View FundedScope ↗</a>
-            </div>
-          </div>
-
-          <div class="fx-cv-grid">
-            <article class="fx-cv-card full">
-              <h3>Professional Profile</h3>
-              <p>UK-based Forex Trader focused on XAU/USD and major FX pairs, combining price action, market structure, liquidity, ICT/SMC concepts, and disciplined risk management. I also build trading technology through FundedScope, a SaaS platform for broker and prop firm comparison.</p>
-            </article>
-            <article class="fx-cv-card">
-              <h3>Market Focus</h3>
-              <ul>
-                <li>XAU/USD and major FX pairs</li>
-                <li>Price action and market structure</li>
-                <li>Liquidity, sessions, and news awareness</li>
-                <li>Forex Factory calendar workflow</li>
-              </ul>
-            </article>
-            <article class="fx-cv-card">
-              <h3>Risk Approach</h3>
-              <ul>
-                <li>Risk-first decision making</li>
-                <li>Defined invalidation before trade entry</li>
-                <li>Journal-led review and improvement</li>
-                <li>No public profit claims without verified data</li>
-              </ul>
-            </article>
-            <article class="fx-cv-card">
-              <h3>Trading Technology</h3>
-              <ul>
-                <li>Built FundedScope for traders</li>
-                <li>Broker and prop firm comparison tools</li>
-                <li>Trading-data organisation and research</li>
-                <li>SEO-focused trading platform pages</li>
-              </ul>
-            </article>
-            <article class="fx-cv-card">
-              <h3>Forex Factory Profile</h3>
-              <ul>
-                <li>The Philosopher | XAU/USD &amp; Major FX</li>
-                <li>Price Action, ICT/SMC, Risk First</li>
-                <li>Trading from United Kingdom</li>
-                <li>Trade Explorer left blank until verified</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="cover-section" id="cover-letter">
       <div class="container">
         <article class="cover-letter reveal">
@@ -1599,7 +1519,7 @@ Custom domain</code>
           </aside>
 
           <div class="cover-body">
-            <p>I am excited to apply for software engineering opportunities where I can contribute full-stack engineering skills, clean implementation, and strong product ownership. I build modern web applications across frontend, backend, databases, authentication, APIs, deployment, SEO, and responsive user experience.</p>
+            <p>I am excited to apply for software engineering opportunities where I can contribute 5 years of professional software engineering experience, full-stack development skills, clean implementation, and strong product ownership. At Cloudflex Ltd, I worked as a professional software engineer on web applications, business software, API integrations, debugging, deployment workflows, and user-focused digital solutions.</p>
             <p>My strongest project is FundedScope, a trading intelligence platform built around broker and prop firm comparison tools. It demonstrates the kind of work I want to keep doing professionally: taking a real product idea and developing the authentication, PostgreSQL data model, REST API routes, SEO-focused pages, deployment workflow, and user facing features needed to make it useful.</p>
             <p>Alongside FundedScope, I have designed and developed multiple full-stack applications across SaaS, e-commerce, productivity, cybersecurity, and business domains. These projects strengthened my experience in building maintainable software, designing REST APIs, working with PostgreSQL databases, and deploying production-ready applications.</p>
             <p>I am comfortable with JavaScript, TypeScript, SQL, React, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, Supabase, Prisma, Git, GitHub, Postman, Netlify, Railway, and Vercel. More importantly, I bring curiosity, discipline, and ownership: I like understanding the reason behind a feature before building it, then shaping the technical solution around the real problem.</p>
